@@ -3,7 +3,7 @@ import { Formik, Form } from "formik";
 import TextField from "./TextField";
 import * as Yup from "yup";
 
-export const SignUp = () => {
+const SignUp = () => {
   const validate = Yup.object({
     firstName: Yup.string()
       .max(15, "Must be 15 characters or less")
@@ -44,7 +44,7 @@ export const SignUp = () => {
             <TextField label="First Name" name="firstName" type="text" />
             <TextField label="last Name" name="lastName" type="text" />
             <TextField label="Email" name="email" type="email" />
-            <TextField label="password" name="password" type="password" />
+            <TextField label="Password" name="password" type="password" />
             <TextField
               label="Confirm Password"
               name="confirmPassword"
